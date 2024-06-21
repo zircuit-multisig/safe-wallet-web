@@ -17,7 +17,7 @@ const Settings: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Safe{Wallet} – Settings'}</title>
+        <title>Zircuit Testnet – Settings</title>
       </Head>
     </>
   )
