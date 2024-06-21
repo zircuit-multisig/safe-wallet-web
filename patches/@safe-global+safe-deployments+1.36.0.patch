@@ -1,0 +1,108 @@
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
+index 277a537..4d38009 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/compatibility_fallback_handler.json
+@@ -174,6 +174,7 @@
+         "44787": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
+         "45000": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
+         "47805": "0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4",
++        "48899": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
+         "54211": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
+         "56288": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
+         "57000": "0x017062a1dE2FE6b99BE3d9d37841FeD19F573804",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
+index 36ee97c..389f4cf 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/create_call.json
+@@ -174,6 +174,7 @@
+         "44787": "0x7cbB62EaA69F79e6873cD1ecB2392971036cFAa4",
+         "45000": "0x7cbB62EaA69F79e6873cD1ecB2392971036cFAa4",
+         "47805": "0x7cbB62EaA69F79e6873cD1ecB2392971036cFAa4",
++        "48899": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
+         "54211": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
+         "56288": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
+         "57000": "0xB19D6FFc2182150F8Eb585b79D4ABcd7C5640A9d",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
+index a1b80d5..c73db4c 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe.json
+@@ -174,6 +174,7 @@
+         "44787": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+         "45000": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+         "47805": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
++        "48899": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
+         "54211": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
+         "56288": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
+         "57000": "0x69f4D1788e39c87893C980c06EdF4b7f686e2938",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
+index bd5d12b..753591c 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/gnosis_safe_l2.json
+@@ -174,6 +174,7 @@
+         "44787": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E",
+         "45000": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E",
+         "47805": "0x3E5c63644E683549055b9Be8653de26E0B4CD36E",
++        "48899": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
+         "54211": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
+         "56288": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
+         "57000": "0xfb1bffC9d739B8D520DaF37dF666da4C687191EA",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
+index 706ee9a..d0ee9d6 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send.json
+@@ -174,6 +174,7 @@
+         "44787": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
+         "45000": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
+         "47805": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
++        "48899": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
+         "54211": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
+         "56288": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
+         "57000": "0x998739BFdAAdde7C933B942a68053933098f9EDa",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
+index 6ae2284..08d10ef 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/multi_send_call_only.json
+@@ -174,6 +174,7 @@
+         "44787": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
+         "45000": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
+         "47805": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
++        "48899": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
+         "54211": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
+         "56288": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
+         "57000": "0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
+index 709a13a..898ecec 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/proxy_factory.json
+@@ -174,6 +174,7 @@
+         "44787": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
+         "45000": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
+         "47805": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
++        "48899": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
+         "54211": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
+         "56288": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
+         "57000": "0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
+index ad65b01..34978ed 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/sign_message_lib.json
+@@ -174,6 +174,7 @@
+         "44787": "0xA65387F16B013cf2Af4605Ad8aA5ec25a2cbA3a2",
+         "45000": "0xA65387F16B013cf2Af4605Ad8aA5ec25a2cbA3a2",
+         "47805": "0xA65387F16B013cf2Af4605Ad8aA5ec25a2cbA3a2",
++        "48899": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
+         "54211": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
+         "56288": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
+         "57000": "0x98FFBBF51bb33A056B08ddf711f289936AafF717",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
+index 9785af7..a2b2ca7 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0/simulate_tx_accessor.json
+@@ -174,6 +174,7 @@
+         "44787": "0x59AD6735bCd8152B84860Cb256dD9e96b85F69Da",
+         "45000": "0x59AD6735bCd8152B84860Cb256dD9e96b85F69Da",
+         "47805": "0x59AD6735bCd8152B84860Cb256dD9e96b85F69Da",
++        "48899": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
+         "54211": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
+         "56288": "0x727a77a074D1E6c4530e814F89E618a3298FC044",
+         "57000": "0x727a77a074D1E6c4530e814F89E618a3298FC044",

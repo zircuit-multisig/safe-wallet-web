@@ -1,0 +1,12 @@
+diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
+index c22dc1e..4bb5ee9 100644
+--- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
++++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
+@@ -178,6 +178,7 @@ exports.networks = [
+     { chainId: 44787n, shortName: 'alfa' },
+     { chainId: 45000n, shortName: 'autobahnnetwork' },
+     { chainId: 47805n, shortName: 'rei' },
++    { chainId: 48899n, shortName: 'zircuit-tesnet' },
+     { chainId: 54211n, shortName: 'islmt' },
+     { chainId: 56288n, shortName: 'boba-bnb' },
+     { chainId: 57000n, shortName: 'tsys-rollux' },
