@@ -1,6 +1,7 @@
 import { AppRoutes } from '@/config/routes'
 import { Paper, SvgIcon, Typography, Divider, Box, Button, Link } from '@mui/material'
 import SafeLogo from '@/public/images/logo-text.svg'
+import SafeLogoDark from '@/public/images/logo-text-dark.svg'
 import css from './styles.module.css'
 import { useRouter } from 'next/router'
 import { CREATE_SAFE_EVENTS } from '@/services/analytics/events/createLoadSafe'
@@ -10,10 +11,12 @@ import { useHasSafes } from '../MyAccounts/useAllSafes'
 import Track from '@/components/common/Track'
 import { useCallback, useEffect, useState } from 'react'
 import WalletLogin from './WalletLogin'
+import { useDarkMode } from '@/hooks/useDarkMode'
 
 const WelcomeLogin = () => {
   const router = useRouter()
   const wallet = useWallet()
+  const isDarkMode = useDarkMode()
   const { isLoaded, hasSafes } = useHasSafes()
   const [shouldRedirect, setShouldRedirect] = useState(false)
 
@@ -37,7 +40,11 @@ const WelcomeLogin = () => {
   return (
     <Paper className={css.loginCard} data-testid="welcome-login">
       <Box className={css.loginContent}>
-        <SvgIcon component={SafeLogo} inheritViewBox sx={{ height: '44px', width: '220px', ml: '-8px' }} />
+        <SvgIcon
+          component={isDarkMode ? SafeLogo : SafeLogoDark}
+          inheritViewBox
+          sx={{ height: '44px', width: '220px', ml: '-8px' }}
+        />
 
         <Typography variant="h6" mt={4} fontWeight={700}>
           Get started

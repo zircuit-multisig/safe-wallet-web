@@ -2,7 +2,7 @@ import type { Dispatch, SetStateAction } from 'react'
 import { type ReactElement } from 'react'
 import { useRouter } from 'next/router'
 import type { Url } from 'next/dist/shared/lib/router/router'
-import { IconButton, Paper } from '@mui/material'
+import { IconButton, Paper, SvgIcon } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import classnames from 'classnames'
 import css from './styles.module.css'
@@ -21,6 +21,8 @@ import { FEATURES } from '@/utils/chains'
 import { useHasFeature } from '@/hooks/useChains'
 import Track from '@/components/common/Track'
 import { OVERVIEW_EVENTS, OVERVIEW_LABELS } from '@/services/analytics'
+import SafeLogoDark from '@/public/images/logo-text-dark.svg'
+import { useDarkMode } from '@/hooks/useDarkMode'
 
 type HeaderProps = {
   onMenuToggle?: Dispatch<SetStateAction<boolean>>
@@ -41,6 +43,7 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
   const showSafeToken = safeAddress && !!getSafeTokenAddress(chainId)
   const router = useRouter()
   const enableWc = useHasFeature(FEATURES.NATIVE_WALLETCONNECT)
+  const isDarkMode = useDarkMode()
 
   // If on the home page, the logo should link to the Accounts or Welcome page, otherwise to the home page
   const logoHref = getLogoLink(router)
@@ -69,7 +72,11 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
-          <SafeLogo alt="Safe logo" />
+          {isDarkMode ? (
+            <SafeLogo alt="Safe logo" />
+          ) : (
+            <SvgIcon component={SafeLogoDark} inheritViewBox sx={{ height: '44px', width: '220px' }} />
+          )}
         </Link>
       </div>
 
