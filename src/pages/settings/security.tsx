@@ -8,7 +8,7 @@ const SecurityPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Settings – Security</title>
+        <title>Zircuit Safe Staging – Settings – Security</title>
       </Head>
 
       <SettingsHeader />

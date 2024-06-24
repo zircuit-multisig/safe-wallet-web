@@ -10,7 +10,7 @@ const Modules: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Settings – Modules</title>
+        <title>Zircuit Safe Staging – Settings – Modules</title>
       </Head>
 
       <SettingsHeader />

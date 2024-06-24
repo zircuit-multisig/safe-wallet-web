@@ -26,7 +26,7 @@ const Messages: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Messages</title>
+        <title>Zircuit Safe Staging – Messages</title>
       </Head>
 
       <TxHeader>

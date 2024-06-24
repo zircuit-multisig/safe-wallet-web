@@ -7,7 +7,7 @@ const EnvironmentVariablesPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Settings – Environment variables</title>
+        <title>Zircuit Safe Staging – Settings – Environment variables</title>
       </Head>
 
       <SettingsHeader />

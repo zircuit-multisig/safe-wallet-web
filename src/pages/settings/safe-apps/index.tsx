@@ -9,7 +9,7 @@ const SafeAppsPermissionsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Settings – Safe Apps</title>
+        <title>Zircuit Safe Staging – Settings – Safe Apps</title>
       </Head>
 
       <SettingsHeader />

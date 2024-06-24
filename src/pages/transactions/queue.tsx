@@ -15,7 +15,7 @@ const Queue: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Transaction queue</title>
+        <title>Zircuit Safe Staging – Transaction queue</title>
       </Head>
 
       <BatchExecuteHoverProvider>

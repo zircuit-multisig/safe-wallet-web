@@ -29,7 +29,7 @@ const CustomSafeApps: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Custom Safe Apps</title>
+        <title>Zircuit Safe Staging – Custom Safe Apps</title>
       </Head>
 
       <SafeAppsSDKLink />

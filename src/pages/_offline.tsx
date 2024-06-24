@@ -7,7 +7,7 @@ const Offline: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Offline</title>
+        <title>Zircuit Safe Staging – Offline</title>
       </Head>
 
       <main>

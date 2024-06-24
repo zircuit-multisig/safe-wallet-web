@@ -18,7 +18,7 @@ const Swap: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Swap</title>
+        <title>Zircuit Safe Staging – Swap</title>
       </Head>
 
       <main className="swapWrapper">

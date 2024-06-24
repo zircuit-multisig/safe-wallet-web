@@ -8,7 +8,7 @@ const Cookies: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Settings – Cookies</title>
+        <title>Zircuit Safe Staging – Settings – Cookies</title>
       </Head>
 
       <SettingsHeader />

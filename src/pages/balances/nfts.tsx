@@ -43,7 +43,7 @@ const NFTs: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – NFTs</title>
+        <title>Zircuit Safe Staging – NFTs</title>
       </Head>
 
       <AssetsHeader />

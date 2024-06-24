@@ -20,7 +20,7 @@ const Balances: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Assets</title>
+        <title>Zircuit Safe Staging – Assets</title>
       </Head>
 
       <AssetsHeader>

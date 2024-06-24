@@ -17,7 +17,7 @@ const Settings: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Settings</title>
+        <title>Zircuit Safe Staging – Settings</title>
       </Head>
     </>
   )

@@ -23,7 +23,7 @@ const AddOwner: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Testnet – Add Signer</title>
+        <title>Zircuit Safe Staging – Add Signer</title>
       </Head>
     </>
   )
