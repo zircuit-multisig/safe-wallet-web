@@ -42,9 +42,9 @@ export const createOnboard = (
     },
 
     appMetadata: {
-      name: 'Safe{Wallet}',
+      name: 'Zircuit Safe Staging',
       icon: location.origin + '/images/logo-round.svg',
-      description: 'Safe{Wallet} – smart contract wallet for Ethereum (ex-Gnosis Safe multisig)',
+      description: 'Zircuit Safe Staging – smart contract wallet for Zircuit Testnet',
     },
 
     connect: {

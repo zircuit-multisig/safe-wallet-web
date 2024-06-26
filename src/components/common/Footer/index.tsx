@@ -32,17 +32,17 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
-          <ExternalLink href={`https://www.zircuit.com/`} noIcon>
+          <ExternalLink href="https://www.zircuit.com/" noIcon>
             <SvgIcon component={LanguageIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Website
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href={`https://x.com/ZircuitL2`} noIcon>
+          <ExternalLink href="https://x.com/ZircuitL2" noIcon>
             <SvgIcon component={XIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> ZircuitL2
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href={`https://discord.com/invite/zircuit`} noIcon>
+          <ExternalLink href="https://discord.com/invite/zircuit" noIcon>
             <SvgIcon component={DiscordIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Discord
           </ExternalLink>
         </li>

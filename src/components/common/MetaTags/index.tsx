@@ -5,7 +5,7 @@ import darkPalette from '@/components/theme/darkPalette'
 
 const descriptionText =
   'Safe (prev. Gnosis Safe) is the most trusted platform to manage digital assets on Ethereum and multiple EVMs. Over $40B secured.'
-const titleText = 'Safe{Wallet}'
+const titleText = 'Zircuit Safe Staging'
 
 const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
   <>
