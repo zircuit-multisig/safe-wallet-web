@@ -72,11 +72,7 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
-          {isDarkMode ? (
-            <SafeLogo alt="Safe logo" />
-          ) : (
-            <SvgIcon component={SafeLogoDark} inheritViewBox sx={{ height: '44px', width: '220px' }} />
-          )}
+          {isDarkMode ? <SafeLogo alt="Safe logo" /> : <SvgIcon component={SafeLogoDark} inheritViewBox />}
         </Link>
       </div>
 
