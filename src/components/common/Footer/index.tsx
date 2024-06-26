@@ -1,6 +1,10 @@
 import type { ReactElement } from 'react'
 import { SvgIcon } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import XIcon from '@mui/icons-material/X'
+import LanguageIcon from '@mui/icons-material/Language'
+import DiscordIcon from '@/public/images/common/discord-icon-new.svg'
+
 import { useRouter } from 'next/router'
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
@@ -27,6 +31,21 @@ const Footer = (): ReactElement | null => {
   return (
     <footer className={css.container}>
       <ul>
+        <li>
+          <ExternalLink href={`https://www.zircuit.com/`} noIcon>
+            <SvgIcon component={LanguageIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Website
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href={`https://x.com/ZircuitL2`} noIcon>
+            <SvgIcon component={XIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> ZircuitL2
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href={`https://discord.com/invite/zircuit`} noIcon>
+            <SvgIcon component={DiscordIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Discord
+          </ExternalLink>
+        </li>
         <li>
           <ExternalLink href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`} noIcon>
             <SvgIcon component={GitHubIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> v{packageJson.version}

@@ -20,6 +20,17 @@
   margin: 0;
 }
 
+.container li a:link svg path,
+.container li a:visited svg path {
+  fill: var(--color-primary-main);
+}
+
+.container li a:focus svg path,
+.container li a:hover svg path,
+.container li a:active svg path {
+  fill: var(--color-border-main);
+}
+
 .container li:not(:last-of-type):after {
   content: '|';
   margin-left: var(--space-2);
