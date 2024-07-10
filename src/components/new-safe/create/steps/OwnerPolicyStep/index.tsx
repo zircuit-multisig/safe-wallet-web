@@ -1,4 +1,3 @@
-import CounterfactualHint from '@/features/counterfactual/CounterfactualHint'
 import useAddressBook from '@/hooks/useAddressBook'
 import useWallet from '@/hooks/wallets/useWallet'
 import { Button, SvgIcon, MenuItem, Tooltip, Typography, Divider, Box, Grid, TextField } from '@mui/material'
@@ -118,7 +117,7 @@ const OwnerPolicyStep = ({
           >
             Add new signer
           </Button>
-          <Box p={2} mt={3} sx={{ backgroundColor: 'background.main', borderRadius: '8px' }}>
+          {/* <Box p={2} mt={3} sx={{ backgroundColor: 'background.main', borderRadius: '8px' }}>
             <Typography variant="subtitle1" fontWeight={700} display="inline-flex" alignItems="center" gap={1}>
               {'Safe{Wallet}'} mobile signer key (optional){' '}
               <Tooltip
@@ -132,7 +131,7 @@ const OwnerPolicyStep = ({
               </Tooltip>
             </Typography>
             <Typography variant="body2">Use your mobile phone as an additional signer key</Typography>
-          </Box>
+          </Box> */}
         </Box>
 
         <Divider />
@@ -172,8 +171,6 @@ const OwnerPolicyStep = ({
               <Typography>out of {ownerFields.length} signer(s)</Typography>
             </Grid>
           </Grid>
-
-          {ownerFields.length > 1 && <CounterfactualHint />}
         </Box>
         <Divider />
         <Box className={layoutCss.row}>
