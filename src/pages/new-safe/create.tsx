@@ -7,7 +7,7 @@ const Open: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Zircuit Safe Staging – Create Safe Account</title>
+        <title>Zircuit Safe – Create Safe Account</title>
       </Head>
 
       <CreateSafe />

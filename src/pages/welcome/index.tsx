@@ -6,7 +6,7 @@ const Welcome: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Welcome</title>
+        <title>Zircuit Safe – Welcome</title>
       </Head>
 
       <NewSafe />

@@ -717,7 +717,7 @@ const Licenses: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Licenses</title>
+        <title>Zircuit Safe – Licenses</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeLicenses />}</main>

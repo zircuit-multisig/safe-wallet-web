@@ -604,7 +604,7 @@ const Terms: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Terms</title>
+        <title>Zircuit Safe – Terms</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeTerms />}</main>

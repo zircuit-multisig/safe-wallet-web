@@ -19,7 +19,7 @@ const Setup: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Settings – Setup</title>
+        <title>Zircuit Safe – Settings – Setup</title>
       </Head>
 
       <SettingsHeader />

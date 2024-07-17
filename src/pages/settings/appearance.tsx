@@ -32,7 +32,7 @@ const Appearance: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Settings – Appearance</title>
+        <title>Zircuit Safe – Settings – Appearance</title>
       </Head>
 
       <SettingsHeader />

@@ -25,7 +25,7 @@ const History: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Transaction history</title>
+        <title>Zircuit Safe – Transaction history</title>
       </Head>
 
       <TxHeader>

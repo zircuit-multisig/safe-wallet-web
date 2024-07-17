@@ -42,9 +42,9 @@ export const createOnboard = (
     },
 
     appMetadata: {
-      name: 'Zircuit Safe Staging',
+      name: 'Zircuit Safe',
       icon: location.origin + '/images/logo-round.svg',
-      description: 'Zircuit Safe Staging – smart contract wallet for Zircuit Testnet',
+      description: 'Zircuit Safe – smart contract wallet for Zircuit Testnet',
     },
 
     connect: {

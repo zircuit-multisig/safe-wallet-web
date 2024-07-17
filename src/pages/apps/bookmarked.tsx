@@ -14,7 +14,7 @@ const BookmarkedSafeApps: NextPage = () => {
 
   return (
     <Head>
-      <title>Zircuit Safe Staging – Safe Apps</title>
+      <title>Zircuit Safe – Safe Apps</title>
     </Head>
   )
 }

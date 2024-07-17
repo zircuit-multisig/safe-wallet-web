@@ -31,7 +31,7 @@ export const SAFE_COMPATIBLE_METHODS = [
 export const SAFE_COMPATIBLE_EVENTS = ['chainChanged', 'accountsChanged']
 
 export const SAFE_WALLET_METADATA = {
-  name: 'Zircuit Safe Staging',
+  name: 'Zircuit Safe',
   url: 'https://testnet.safe.zircuit.com/',
   description: 'Smart contract wallet for the Zircuit Testnet',
   icons: ['https://testnet.safe.zircuit.com/images/logo-round.svg'],

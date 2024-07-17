@@ -16,7 +16,7 @@ const NotificationsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Settings – Notifications</title>
+        <title>Zircuit Safe – Settings – Notifications</title>
       </Head>
 
       <SettingsHeader />

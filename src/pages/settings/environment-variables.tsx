@@ -7,7 +7,7 @@ const EnvironmentVariablesPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Settings – Environment variables</title>
+        <title>Zircuit Safe – Settings – Environment variables</title>
       </Head>
 
       <SettingsHeader />

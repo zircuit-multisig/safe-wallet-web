@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Dashboard</title>
+        <title>Zircuit Safe – Dashboard</title>
       </Head>
 
       <main>

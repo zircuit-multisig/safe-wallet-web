@@ -6,7 +6,7 @@ const AddressBook: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Address book</title>
+        <title>Zircuit Safe – Address book</title>
       </Head>
 
       <AddressBookTable />

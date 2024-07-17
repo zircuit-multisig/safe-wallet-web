@@ -11,7 +11,7 @@ const Load: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Zircuit Safe Staging – Add Safe Account</title>
+        <title>Zircuit Safe – Add Safe Account</title>
       </Head>
 
       {safeAddress ? (

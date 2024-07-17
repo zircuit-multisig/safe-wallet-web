@@ -7,7 +7,7 @@ const Data: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Settings – Data</title>
+        <title>Zircuit Safe – Settings – Data</title>
       </Head>
 
       <SettingsHeader />

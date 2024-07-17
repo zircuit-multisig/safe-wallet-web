@@ -995,7 +995,7 @@ const PrivacyPolicy: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – Privacy policy</title>
+        <title>Zircuit Safe – Privacy policy</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafePrivacyPolicy />}</main>

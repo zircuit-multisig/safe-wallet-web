@@ -6,7 +6,7 @@ const Accounts: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zircuit Safe Staging – My accounts</title>
+        <title>Zircuit Safe – My accounts</title>
       </Head>
 
       <MyAccounts />
