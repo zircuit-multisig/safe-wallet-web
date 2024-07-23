@@ -3,6 +3,7 @@ import { SvgIcon } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import XIcon from '@mui/icons-material/X'
 import LanguageIcon from '@mui/icons-material/Language'
+import FileOpenIcon from '@mui/icons-material/FileOpen'
 import DiscordIcon from '@/public/images/common/discord-icon-new.svg'
 
 import { useRouter } from 'next/router'
@@ -44,6 +45,11 @@ const Footer = (): ReactElement | null => {
         <li>
           <ExternalLink href="https://discord.com/invite/zircuit" noIcon>
             <SvgIcon component={DiscordIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Discord
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href="https://dubiw3zgo51jg.cloudfront.net/tos.pdf" noIcon>
+            <SvgIcon component={FileOpenIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Terms Of Service
           </ExternalLink>
         </li>
         <li>
