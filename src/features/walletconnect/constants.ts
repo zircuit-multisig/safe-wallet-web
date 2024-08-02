@@ -32,9 +32,9 @@ export const SAFE_COMPATIBLE_EVENTS = ['chainChanged', 'accountsChanged']
 
 export const SAFE_WALLET_METADATA = {
   name: 'Zircuit Safe',
-  url: 'https://testnet.safe.zircuit.com/',
-  description: 'Smart contract wallet for the Zircuit Testnet',
-  icons: ['https://testnet.safe.zircuit.com/images/logo-round.svg'],
+  url: 'https://safe.zircuit.com/',
+  description: 'Smart contract wallet for Zircuit',
+  icons: ['https://safe.zircuit.com/images/logo-round.svg'],
 }
 
 export const EIP155 = 'eip155' as const
