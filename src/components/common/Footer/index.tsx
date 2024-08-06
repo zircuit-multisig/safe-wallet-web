@@ -54,6 +54,12 @@ const Footer = (): ReactElement | null => {
             <SvgIcon component={GitHubIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> v{packageJson.version}
           </ExternalLink>
         </li>
+        <li>
+          Deployed by&nbsp;
+          <ExternalLink href="https://protofire.io/services/safe-deployment" noIcon>
+            Protofire
+          </ExternalLink>
+        </li>
       </ul>
     </footer>
   )
