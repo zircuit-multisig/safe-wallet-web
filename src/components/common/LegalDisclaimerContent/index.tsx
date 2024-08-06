@@ -1,5 +1,4 @@
 import ExternalLink from '@/components/common/ExternalLink'
-import { AppRoutes } from '@/config/routes'
 import { Typography } from '@mui/material'
 
 import css from './styles.module.css'
@@ -31,7 +30,7 @@ const LegalDisclaimerContent = ({
 
       <Typography>
         I have read and understood the{' '}
-        <ExternalLink href={AppRoutes.terms} sx={{ textDecoration: 'none' }}>
+        <ExternalLink href="https://dubiw3zgo51jg.cloudfront.net/tos.pdf" sx={{ textDecoration: 'none' }}>
           Terms
         </ExternalLink>{' '}
         and this Disclaimer, and agree to be bound by them.
