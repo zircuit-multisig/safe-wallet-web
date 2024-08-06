@@ -102,11 +102,11 @@ function SetNameStep({
           </Grid>
           <Typography variant="body2" mt={2}>
             By continuing, you agree to our{' '}
-            <Link href={AppRoutes.terms} passHref legacyBehavior>
+            <Link href={'https://dubiw3zgo51jg.cloudfront.net/tos.pdf'} passHref legacyBehavior>
               <MUILink>terms of use</MUILink>
             </Link>{' '}
             and{' '}
-            <Link href={AppRoutes.privacy} passHref legacyBehavior>
+            <Link href={'https://dubiw3zgo51jg.cloudfront.net/pp.pdf'} passHref legacyBehavior>
               <MUILink>privacy policy</MUILink>
             </Link>
             .

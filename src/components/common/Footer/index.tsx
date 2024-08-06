@@ -12,15 +12,7 @@ import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
 
-const footerPages = [
-  AppRoutes.welcome.index,
-  AppRoutes.settings.index,
-  AppRoutes.imprint,
-  AppRoutes.privacy,
-  AppRoutes.cookie,
-  AppRoutes.terms,
-  AppRoutes.licenses,
-]
+const footerPages = [AppRoutes.welcome.index, AppRoutes.settings.index, AppRoutes.imprint, AppRoutes.cookie]
 
 const Footer = (): ReactElement | null => {
   const router = useRouter()
