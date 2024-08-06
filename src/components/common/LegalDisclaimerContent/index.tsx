@@ -30,7 +30,7 @@ const LegalDisclaimerContent = ({
 
       <Typography>
         I have read and understood the{' '}
-        <ExternalLink href={'https://dubiw3zgo51jg.cloudfront.net/tos.pdf'} sx={{ textDecoration: 'none' }}>
+        <ExternalLink href="https://dubiw3zgo51jg.cloudfront.net/tos.pdf" sx={{ textDecoration: 'none' }}>
           Terms
         </ExternalLink>{' '}
         and this Disclaimer, and agree to be bound by them.

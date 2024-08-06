@@ -27,7 +27,6 @@ import useChainId from '@/hooks/useChainId'
 import { useAppSelector } from '@/store'
 import { selectAddedSafes } from '@/store/addedSafesSlice'
 import { LOAD_SAFE_EVENTS, trackEvent } from '@/services/analytics'
-import { AppRoutes } from '@/config/routes'
 import MUILink from '@mui/material/Link'
 import Link from 'next/link'
 
@@ -143,11 +142,11 @@ const SetAddressStep = ({ data, onSubmit, onBack }: StepRenderProps<LoadSafeForm
 
           <Typography mt={4}>
             By continuing you consent to the{' '}
-            <Link href={'https://dubiw3zgo51jg.cloudfront.net/tos.pdf'} passHref legacyBehavior>
+            <Link href="https://dubiw3zgo51jg.cloudfront.net/tos.pdf" passHref legacyBehavior>
               <MUILink>terms of use</MUILink>
             </Link>{' '}
             and{' '}
-            <Link href={'https://dubiw3zgo51jg.cloudfront.net/pp.pdf'} passHref legacyBehavior>
+            <Link href="https://dubiw3zgo51jg.cloudfront.net/pp.pdf" passHref legacyBehavior>
               <MUILink>privacy policy</MUILink>
             </Link>
             .
