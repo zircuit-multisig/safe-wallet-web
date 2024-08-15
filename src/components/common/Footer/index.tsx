@@ -55,7 +55,7 @@ const Footer = (): ReactElement | null => {
           </ExternalLink>
         </li>
         <li>
-          Deployed by&nbsp;
+          Deployed and Maintained by&nbsp;
           <ExternalLink href="https://protofire.io/services/safe-deployment" noIcon>
             Protofire
           </ExternalLink>
