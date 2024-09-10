@@ -128,7 +128,7 @@ export function changeCurrency(currency) {
 }
 
 export function clickOnSendBtn(index) {
-  cy.wait(2000)
+  cy.wait(4000)
   cy.get(addressbook.tableRow)
     .eq(index)
     .within(() => {
@@ -264,9 +264,9 @@ export function verifyTokenIsPresent(token) {
 
 export function selectTokenList(option) {
   cy.get(tokenListDropdown)
-    .click()
+    .click({ force: true })
     .then(() => {
-      cy.get(option).click()
+      cy.get(option).click({ force: true })
     })
 }
 
