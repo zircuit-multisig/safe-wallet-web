@@ -11,6 +11,7 @@ import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
+import { HELP_CENTER_URL } from '@/config/constants'
 
 const footerPages = [AppRoutes.welcome.index, AppRoutes.settings.index, AppRoutes.imprint, AppRoutes.cookie]
 
@@ -47,6 +48,11 @@ const Footer = (): ReactElement | null => {
         <li>
           <ExternalLink href="https://dubiw3zgo51jg.cloudfront.net/pp.pdf" noIcon>
             <SvgIcon component={FileOpenIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Privacy Policy
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+            Help
           </ExternalLink>
         </li>
         <li>
