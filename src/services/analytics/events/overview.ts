@@ -19,6 +19,10 @@ export const OVERVIEW_EVENTS = {
     action: 'Copy Safe address',
     category: OVERVIEW_CATEGORY,
   },
+  SUGGESTIONS: {
+    action: 'Suggest any new Feature',
+    category: OVERVIEW_CATEGORY,
+  },
   OPEN_EXPLORER: {
     action: 'Open Safe on block explorer',
     category: OVERVIEW_CATEGORY,
