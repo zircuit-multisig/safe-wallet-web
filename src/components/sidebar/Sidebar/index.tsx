@@ -9,6 +9,7 @@ import SidebarNavigation from '@/components/sidebar/SidebarNavigation'
 import css from './styles.module.css'
 import { trackEvent, OVERVIEW_EVENTS } from '@/services/analytics'
 import MyAccounts from '@/components/welcome/MyAccounts'
+import SidebarFooter from '../SidebarFooter'
 
 const Sidebar = (): ReactElement => {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false)
@@ -46,7 +47,7 @@ const Sidebar = (): ReactElement => {
         <Divider flexItem />
 
         {/* What's new + Need help? */}
-        {/* <SidebarFooter /> */}
+        <SidebarFooter />
       </div>
 
       <Drawer variant="temporary" anchor="left" open={isDrawerOpen} onClose={onDrawerToggle}>
