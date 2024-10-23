@@ -8,11 +8,11 @@ import classnames from 'classnames'
 import css from './styles.module.css'
 import ConnectWallet from '@/components/common/ConnectWallet'
 import NetworkSelector from '@/components/common/NetworkSelector'
-import SafeTokenWidget, { getSafeTokenAddress } from '@/components/common/SafeTokenWidget'
+import SafeTokenWidget from '@/components/common/SafeTokenWidget'
 import NotificationCenter from '@/components/notification-center/NotificationCenter'
 import { AppRoutes } from '@/config/routes'
-import useChainId from '@/hooks/useChainId'
 import SafeLogo from '@/public/images/logo.svg'
+import SafeLogoMobile from '@/public/images/logo-no-text.svg'
 import Link from 'next/link'
 import useSafeAddress from '@/hooks/useSafeAddress'
 import BatchIndicator from '@/components/batch/BatchIndicator'
@@ -23,6 +23,7 @@ import Track from '@/components/common/Track'
 import { OVERVIEW_EVENTS, OVERVIEW_LABELS } from '@/services/analytics'
 import SafeLogoDark from '@/public/images/logo-text-dark.svg'
 import { useDarkMode } from '@/hooks/useDarkMode'
+import { useSafeTokenEnabled } from '@/hooks/useSafeTokenEnabled'
 
 type HeaderProps = {
   onMenuToggle?: Dispatch<SetStateAction<boolean>>
@@ -38,9 +39,8 @@ function getLogoLink(router: ReturnType<typeof useRouter>): Url {
 }
 
 const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
-  const chainId = useChainId()
   const safeAddress = useSafeAddress()
-  const showSafeToken = safeAddress && !!getSafeTokenAddress(chainId)
+  const showSafeToken = useSafeTokenEnabled()
   const router = useRouter()
   const enableWc = useHasFeature(FEATURES.NATIVE_WALLETCONNECT)
   const isDarkMode = useDarkMode()
@@ -64,10 +64,18 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
   return (
     <Paper className={css.container}>
-      <div className={classnames(css.element, css.menuButton, !onMenuToggle ? css.hideSidebarMobile : null)}>
-        <IconButton onClick={handleMenuToggle} size="large" color="default" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
+      <div className={classnames(css.element, css.menuButton)}>
+        {onMenuToggle && (
+          <IconButton onClick={handleMenuToggle} size="large" color="default" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+        )}
+      </div>
+
+      <div className={classnames(css.element, css.logoMobile)}>
+        <Link href={logoHref} passHref>
+          <SafeLogoMobile alt="Safe logo" />
+        </Link>
       </div>
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>

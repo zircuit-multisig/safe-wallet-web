@@ -1,26 +1,42 @@
-import type { ReactElement } from 'react'
-import { Link, SvgIcon, Typography } from '@mui/material'
+import type { ReactElement, ReactNode } from 'react'
+import { SvgIcon, Typography } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import XIcon from '@mui/icons-material/X'
-import LanguageIcon from '@mui/icons-material/Language'
-import FileOpenIcon from '@mui/icons-material/FileOpen'
-import DiscordIcon from '@/public/images/common/discord-icon-new.svg'
-import ProtofireLogo from '@/public/images/protofire-logo.svg'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
+import MUILink from '@mui/material/Link'
 import { HELP_CENTER_URL } from '@/config/constants'
+import XIcon from '@mui/icons-material/X'
+import LanguageIcon from '@mui/icons-material/Language'
+import FileOpenIcon from '@mui/icons-material/FileOpen'
+import DiscordIcon from '@/public/images/common/discord-icon-new.svg'
+import ProtofireLogo from '@/public/images/protofire-logo.svg'
 import darkPalette from '@/components/theme/darkPalette'
 
 const footerPages = [AppRoutes.welcome.index, AppRoutes.settings.index, AppRoutes.imprint, AppRoutes.cookie]
+
+const FooterLink = ({ children, href }: { children: ReactNode; href: string }): ReactElement => {
+  return href ? (
+    <Link href={href} passHref legacyBehavior>
+      <MUILink>{children}</MUILink>
+    </Link>
+  ) : (
+    <MUILink>{children}</MUILink>
+  )
+}
 
 const Footer = (): ReactElement | null => {
   const router = useRouter()
 
   if (!footerPages.some((path) => router.pathname.startsWith(path))) {
     return null
+  }
+
+  const getHref = (path: string): string => {
+    return router.pathname === path ? '' : path
   }
 
   return (
@@ -50,6 +66,9 @@ const Footer = (): ReactElement | null => {
           <ExternalLink href="https://dubiw3zgo51jg.cloudfront.net/pp.pdf" noIcon>
             <SvgIcon component={FileOpenIcon} inheritViewBox fontSize="inherit" sx={{ mr: 0.5 }} /> Privacy Policy
           </ExternalLink>
+        </li>
+        <li>
+          <FooterLink href={getHref(AppRoutes.cookie)}>Cookie policy</FooterLink>
         </li>
         <li>
           <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
